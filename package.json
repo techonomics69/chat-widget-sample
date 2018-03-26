@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/livechat/chat-widget-sample#readme",
   "dependencies": {
-    "react": "^15.5.4",
+    "react": "^16.2.0",
     "react-dom": "^15.5.4",
     "react-redux": "^5.0.2",
 		"redux-create-reducer": "^1.1.0",
