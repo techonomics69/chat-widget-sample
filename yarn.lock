@@ -21,13 +21,24 @@
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/@livechat/cookies/-/cookies-0.0.1.tgz#81ad57af1d91bec97fdbdbad83155d91cc6fa348"
 
-"@livechat/livechat-visitor-sdk@0.29.0-beta1":
-  version "0.29.0-beta1"
-  resolved "https://registry.yarnpkg.com/@livechat/livechat-visitor-sdk/-/livechat-visitor-sdk-0.29.0-beta1.tgz#e64fbc7ba969bbaec7c4f81d26d61a295910e4dc"
+"@livechat/data-utils@^0.2.0":
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/@livechat/data-utils/-/data-utils-0.2.2.tgz#7f53ebee0b90fdf62523717f5297af3142af50f4"
+
+"@livechat/file-upload@^0.2.1":
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/@livechat/file-upload/-/file-upload-0.2.1.tgz#e3e1103a5bdb88298dc8f4b0ea4ac753757f498f"
+
+"@livechat/livechat-visitor-sdk@0.35.0":
+  version "0.35.0"
+  resolved "https://registry.yarnpkg.com/@livechat/livechat-visitor-sdk/-/livechat-visitor-sdk-0.35.0.tgz#a84d9b6478a04c6bd76a0f980dd149e880f73902"
   dependencies:
     "@livechat/cookies" "^0.0.1"
-    "@livechat/redux-utils" "^0.0.0"
+    "@livechat/data-utils" "^0.2.0"
+    "@livechat/file-upload" "^0.2.1"
+    "@livechat/redux-utils" "^0.1.0"
     "@livechat/saga-utils" "^0.1.0"
+    "@livechat/url-utils" "^0.1.1"
     lodash "^4.17.4"
     memory-web-storage "^0.1.0"
     mitt "^1.1.2"
@@ -36,9 +47,12 @@
     regenerator-runtime "^0.10.5"
     unfetch "^2.1.2"
 
-"@livechat/redux-utils@^0.0.0":
-  version "0.0.0"
-  resolved "https://registry.yarnpkg.com/@livechat/redux-utils/-/redux-utils-0.0.0.tgz#f3a714a2f978d54bfecb07ad8f7be3c925fbd0de"
+"@livechat/redux-utils@^0.1.0":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@livechat/redux-utils/-/redux-utils-0.1.0.tgz#90eb38234a920880373f4b47a7bf8a3aac42a33c"
+  dependencies:
+    "@livechat/data-utils" "^0.2.0"
+    redux-saga "^0.15.6"
 
 "@livechat/saga-utils@^0.1.0":
   version "0.1.0"
@@ -59,6 +73,10 @@
     react-textarea-autosize "^5.2.1"
     react-transition-group "^2.2.1"
     recompose "^0.23.4"
+
+"@livechat/url-utils@^0.1.1":
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/@livechat/url-utils/-/url-utils-0.1.1.tgz#4bb80b3e443c1a1232f10444496a6bdd5ba4c558"
 
 abab@^1.0.3:
   version "1.0.4"
@@ -4092,9 +4110,13 @@ lodash.uniq@^4.5.0:
   version "4.5.0"
   resolved "https://registry.yarnpkg.com/lodash.uniq/-/lodash.uniq-4.5.0.tgz#d0225373aeb652adc1bc82e4945339a842754773"
 
-"lodash@>=3.5 <5", lodash@^4.14.0, lodash@^4.15.0, lodash@^4.17.2, lodash@^4.17.3, lodash@^4.17.4, lodash@^4.2.0, lodash@^4.2.1, lodash@^4.3.0:
+"lodash@>=3.5 <5", lodash@^4.14.0, lodash@^4.15.0, lodash@^4.17.2, lodash@^4.17.3, lodash@^4.2.0, lodash@^4.2.1, lodash@^4.3.0:
   version "4.17.4"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.4.tgz#78203a4d1c328ae1d86dca6460e369b57f4055ae"
+
+lodash@^4.17.4:
+  version "4.17.10"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.10.tgz#1b7793cf7259ea38fb3661d4d38b3260af8ae4e7"
 
 loglevel@^1.4.1:
   version "1.6.0"
