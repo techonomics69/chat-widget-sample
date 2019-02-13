@@ -21,24 +21,48 @@
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/@livechat/cookies/-/cookies-0.0.1.tgz#81ad57af1d91bec97fdbdbad83155d91cc6fa348"
 
-"@livechat/livechat-visitor-sdk@0.29.0-beta1":
-  version "0.29.0-beta1"
-  resolved "https://registry.yarnpkg.com/@livechat/livechat-visitor-sdk/-/livechat-visitor-sdk-0.29.0-beta1.tgz#e64fbc7ba969bbaec7c4f81d26d61a295910e4dc"
+"@livechat/data-utils@^0.2.3", "@livechat/data-utils@^0.2.6":
+  version "0.2.6"
+  resolved "https://registry.yarnpkg.com/@livechat/data-utils/-/data-utils-0.2.6.tgz#c0b69ad10cfb2204d5b4f032094e3a794705368b"
+
+"@livechat/deferred@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@livechat/deferred/-/deferred-1.0.0.tgz#aba8cad4e4d73ecf459c27eff0fece88e9bc7273"
+
+"@livechat/file-upload@^0.2.1":
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/@livechat/file-upload/-/file-upload-0.2.1.tgz#e3e1103a5bdb88298dc8f4b0ea4ac753757f498f"
+
+"@livechat/livechat-visitor-sdk@0.35.2":
+  version "0.35.2"
+  resolved "https://registry.yarnpkg.com/@livechat/livechat-visitor-sdk/-/livechat-visitor-sdk-0.35.2.tgz#42f1a0096eccbbe0602d5c29f23ef895dad44994"
   dependencies:
     "@livechat/cookies" "^0.0.1"
-    "@livechat/redux-utils" "^0.0.0"
+    "@livechat/data-utils" "^0.2.3"
+    "@livechat/file-upload" "^0.2.1"
+    "@livechat/mitt" "^0.1.0"
+    "@livechat/redux-utils" "^0.1.0"
     "@livechat/saga-utils" "^0.1.0"
+    "@livechat/url-utils" "^0.1.1"
     lodash "^4.17.4"
     memory-web-storage "^0.1.0"
-    mitt "^1.1.2"
     redux "^3.6.0"
     redux-saga "^0.15.6"
     regenerator-runtime "^0.10.5"
     unfetch "^2.1.2"
 
-"@livechat/redux-utils@^0.0.0":
-  version "0.0.0"
-  resolved "https://registry.yarnpkg.com/@livechat/redux-utils/-/redux-utils-0.0.0.tgz#f3a714a2f978d54bfecb07ad8f7be3c925fbd0de"
+"@livechat/mitt@^0.1.0":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@livechat/mitt/-/mitt-0.1.0.tgz#44f36fcabff51a5b8af83c3b0b077d3556947bf2"
+  dependencies:
+    mitt "^1.1.2"
+
+"@livechat/redux-utils@^0.1.0":
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/@livechat/redux-utils/-/redux-utils-0.1.2.tgz#3e87cb3455fe8657046d8a09df2d68ff97bf4f2b"
+  dependencies:
+    "@livechat/data-utils" "^0.2.6"
+    "@livechat/deferred" "^1.0.0"
 
 "@livechat/saga-utils@^0.1.0":
   version "0.1.0"
@@ -59,6 +83,10 @@
     react-textarea-autosize "^5.2.1"
     react-transition-group "^2.2.1"
     recompose "^0.23.4"
+
+"@livechat/url-utils@^0.1.1":
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/@livechat/url-utils/-/url-utils-0.1.1.tgz#4bb80b3e443c1a1232f10444496a6bdd5ba4c558"
 
 abab@^1.0.3:
   version "1.0.4"
