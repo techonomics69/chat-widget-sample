@@ -9,6 +9,12 @@
     "@babel/types" "7.0.0-beta.32"
     lodash "^4.2.0"
 
+"@babel/runtime@^7.4.2":
+  version "7.5.5"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.5.5.tgz#74fba56d35efbeca444091c7850ccd494fd2f132"
+  dependencies:
+    regenerator-runtime "^0.13.2"
+
 "@babel/types@7.0.0-beta.32":
   version "7.0.0-beta.32"
   resolved "https://registry.yarnpkg.com/@babel/types/-/types-7.0.0-beta.32.tgz#c317d0ecc89297b80bbcb2f50608e31f6452a5ff"
@@ -21,29 +27,54 @@
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/@livechat/cookies/-/cookies-0.0.1.tgz#81ad57af1d91bec97fdbdbad83155d91cc6fa348"
 
-"@livechat/livechat-visitor-sdk@0.29.0-beta1":
-  version "0.29.0-beta1"
-  resolved "https://registry.yarnpkg.com/@livechat/livechat-visitor-sdk/-/livechat-visitor-sdk-0.29.0-beta1.tgz#e64fbc7ba969bbaec7c4f81d26d61a295910e4dc"
+"@livechat/data-utils@^0.2.6", "@livechat/data-utils@^0.2.7":
+  version "0.2.7"
+  resolved "https://registry.yarnpkg.com/@livechat/data-utils/-/data-utils-0.2.7.tgz#5b7cf86bcc0e573a63a6c4df0013a9ca7d526779"
+
+"@livechat/deferred@^1.0.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@livechat/deferred/-/deferred-1.1.0.tgz#5b81c6d927007c0fb51480b18e1b47d699b4c5df"
+
+"@livechat/file-upload@^0.2.1":
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/@livechat/file-upload/-/file-upload-0.2.1.tgz#e3e1103a5bdb88298dc8f4b0ea4ac753757f498f"
+
+"@livechat/livechat-visitor-sdk@0.36.2":
+  version "0.36.2"
+  resolved "https://registry.yarnpkg.com/@livechat/livechat-visitor-sdk/-/livechat-visitor-sdk-0.36.2.tgz#168497b842f83f1742ba8f01f0f161db76255f50"
   dependencies:
+    "@babel/runtime" "^7.4.2"
     "@livechat/cookies" "^0.0.1"
-    "@livechat/redux-utils" "^0.0.0"
-    "@livechat/saga-utils" "^0.1.0"
-    lodash "^4.17.4"
-    memory-web-storage "^0.1.0"
-    mitt "^1.1.2"
-    redux "^3.6.0"
+    "@livechat/data-utils" "^0.2.7"
+    "@livechat/file-upload" "^0.2.1"
+    "@livechat/mitt" "^0.1.2"
+    "@livechat/redux-utils" "^0.1.2"
+    "@livechat/saga-utils" "^0.1.1"
+    "@livechat/url-utils" "^0.1.3"
+    memory-web-storage "^1.0.0"
+    redux "^4.0.1"
     redux-saga "^0.15.6"
     regenerator-runtime "^0.10.5"
     unfetch "^2.1.2"
 
-"@livechat/redux-utils@^0.0.0":
-  version "0.0.0"
-  resolved "https://registry.yarnpkg.com/@livechat/redux-utils/-/redux-utils-0.0.0.tgz#f3a714a2f978d54bfecb07ad8f7be3c925fbd0de"
-
-"@livechat/saga-utils@^0.1.0":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@livechat/saga-utils/-/saga-utils-0.1.0.tgz#36901e9f071b92b1c15b3a5e371a38467cc25069"
+"@livechat/mitt@^0.1.2":
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/@livechat/mitt/-/mitt-0.1.2.tgz#04a472916f738499a7ff695e70265901238a560d"
   dependencies:
+    mitt "^1.1.2"
+
+"@livechat/redux-utils@^0.1.2":
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/@livechat/redux-utils/-/redux-utils-0.1.2.tgz#3e87cb3455fe8657046d8a09df2d68ff97bf4f2b"
+  dependencies:
+    "@livechat/data-utils" "^0.2.6"
+    "@livechat/deferred" "^1.0.0"
+
+"@livechat/saga-utils@^0.1.1":
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/@livechat/saga-utils/-/saga-utils-0.1.1.tgz#6c73e97087c48c83110165f48fd30c88ee6d6ab5"
+  dependencies:
+    babel-runtime "^6.23.0"
     backo2 "^1.0.2"
 
 "@livechat/ui-kit@0.0.9":
@@ -59,6 +90,12 @@
     react-textarea-autosize "^5.2.1"
     react-transition-group "^2.2.1"
     recompose "^0.23.4"
+
+"@livechat/url-utils@^0.1.3":
+  version "0.1.3"
+  resolved "https://registry.yarnpkg.com/@livechat/url-utils/-/url-utils-0.1.3.tgz#078b4419232350e551c8bb98709da0f9f4d5e3eb"
+  dependencies:
+    "@livechat/data-utils" "^0.2.7"
 
 abab@^1.0.3:
   version "1.0.4"
@@ -981,7 +1018,7 @@ babel-register@^6.26.0:
     mkdirp "^0.5.1"
     source-map-support "^0.4.15"
 
-babel-runtime@6.26.0, babel-runtime@^6.18.0, babel-runtime@^6.22.0, babel-runtime@^6.26.0:
+babel-runtime@6.26.0, babel-runtime@^6.18.0, babel-runtime@^6.22.0, babel-runtime@^6.23.0, babel-runtime@^6.26.0:
   version "6.26.0"
   resolved "https://registry.yarnpkg.com/babel-runtime/-/babel-runtime-6.26.0.tgz#965c7058668e82b55d7bfe04ff2337bc8b5647fe"
   dependencies:
@@ -3829,6 +3866,10 @@ js-tokens@^3.0.0, js-tokens@^3.0.2:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/js-tokens/-/js-tokens-3.0.2.tgz#9866df395102130e38f7f996bceb65443209c25b"
 
+"js-tokens@^3.0.0 || ^4.0.0":
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/js-tokens/-/js-tokens-4.0.0.tgz#19203fb59991df98e3a287050d4647cdeaf32499"
+
 js-yaml@^3.4.3, js-yaml@^3.7.0, js-yaml@^3.9.0, js-yaml@^3.9.1:
   version "3.10.0"
   resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-3.10.0.tgz#2e78441646bd4682e963f22b6e92823c309c62dc"
@@ -4110,6 +4151,12 @@ loose-envify@^1.0.0, loose-envify@^1.1.0, loose-envify@^1.3.1:
   dependencies:
     js-tokens "^3.0.0"
 
+loose-envify@^1.4.0:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/loose-envify/-/loose-envify-1.4.0.tgz#71ee51fa7be4caec1a63839f7e682d8132d30caf"
+  dependencies:
+    js-tokens "^3.0.0 || ^4.0.0"
+
 loud-rejection@^1.0.0:
   version "1.6.0"
   resolved "https://registry.yarnpkg.com/loud-rejection/-/loud-rejection-1.6.0.tgz#5b46f80147edee578870f086d04821cf998e551f"
@@ -4180,9 +4227,9 @@ memory-fs@^0.4.0, memory-fs@~0.4.1:
     errno "^0.1.3"
     readable-stream "^2.0.1"
 
-memory-web-storage@^0.1.0:
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/memory-web-storage/-/memory-web-storage-0.1.0.tgz#602eb95a9f48735abfeb8236ed8546fb9db5ae88"
+memory-web-storage@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/memory-web-storage/-/memory-web-storage-1.0.0.tgz#616ae646b4d21637aae221b0eeabb2fb77951011"
 
 meow@^3.3.0, meow@^3.7.0:
   version "3.7.0"
@@ -5524,6 +5571,13 @@ redux@^3.6.0:
     loose-envify "^1.1.0"
     symbol-observable "^1.0.3"
 
+redux@^4.0.1:
+  version "4.0.4"
+  resolved "https://registry.yarnpkg.com/redux/-/redux-4.0.4.tgz#4ee1aeb164b63d6a1bcc57ae4aa0b6e6fa7a3796"
+  dependencies:
+    loose-envify "^1.4.0"
+    symbol-observable "^1.2.0"
+
 regenerate@^1.2.1:
   version "1.3.3"
   resolved "https://registry.yarnpkg.com/regenerate/-/regenerate-1.3.3.tgz#0c336d3980553d755c39b586ae3b20aa49c82b7f"
@@ -5535,6 +5589,10 @@ regenerator-runtime@^0.10.5:
 regenerator-runtime@^0.11.0:
   version "0.11.1"
   resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.11.1.tgz#be05ad7f9bf7d22e056f9726cee5017fbf19e2e9"
+
+regenerator-runtime@^0.13.2:
+  version "0.13.3"
+  resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.13.3.tgz#7cf6a77d8f5c6f60eb73c5fc1955b2ceb01e6bf5"
 
 regenerator-transform@^0.10.0:
   version "0.10.1"
@@ -6223,6 +6281,10 @@ sw-toolbox@^3.4.0:
 symbol-observable@^1.0.3, symbol-observable@^1.0.4:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/symbol-observable/-/symbol-observable-1.1.0.tgz#5c68fd8d54115d9dfb72a84720549222e8db9b32"
+
+symbol-observable@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/symbol-observable/-/symbol-observable-1.2.0.tgz#c22688aed4eab3cdc2dfeacbb561660560a00804"
 
 symbol-tree@^3.2.1:
   version "3.2.2"
