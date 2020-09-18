@@ -5503,9 +5503,9 @@ reduce-function-call@^1.0.1:
   dependencies:
     balanced-match "^0.4.2"
 
-redux-create-reducer@^1.1.0:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/redux-create-reducer/-/redux-create-reducer-1.1.1.tgz#f9ea976a8d3e14c3f32898e25709183c93b0b214"
+redux-create-reducer@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/redux-create-reducer/-/redux-create-reducer-2.0.1.tgz#9173c7a1ccac2db470c9b50f2195987db4efe606"
 
 redux-persist@^5.4.0:
   version "5.4.0"
